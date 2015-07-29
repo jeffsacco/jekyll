@@ -29,3 +29,46 @@
     background-color: #333 !important;
     color: #fff;
 }
+
+// sections section
+
+.site-section
+{
+    @extend %clearfix;
+    padding-top: 10px;
+}
+
+.icon-tags
+{
+    @extend %clearfix;
+    margin: 0 auto;
+}
+
+.icon-tags li
+{
+    float: left;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8,6 +8,10 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+*
+{
+    box-sizing: border-box;
+}
 
 
 /**
@@ -99,6 +103,16 @@ a {
     }
 }
 
+.site-section a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+
+    &:hover {
+        color: #555;
+        text-decoration: underline;
+    }
+}
 
 
 /**

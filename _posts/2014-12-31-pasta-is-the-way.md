@@ -3,6 +3,7 @@ layout: post
 title:  "Pasta is the way"
 date:   2014-12-31 08:13:34
 categories: cooking pasta
+tags: css php symfony
 ---
 
 # Memorant resuscitat gratia
