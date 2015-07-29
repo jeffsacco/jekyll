@@ -2,7 +2,7 @@
 layout: post
 title:  "Happy birthday !!"
 date:   2015-07-08 19:13:34
-categories: jekyll update
+categories: blog
 tags: js css
 ---
 

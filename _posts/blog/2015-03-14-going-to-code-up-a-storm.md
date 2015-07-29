@@ -2,7 +2,7 @@
 layout: post
 title:  "Going to code up a storm!!!"
 date:   2015-03-14 08:13:34
-categories: jekyll update
+categories: blog
 tags: osticket
 ---
 

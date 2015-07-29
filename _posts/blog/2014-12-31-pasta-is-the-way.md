@@ -2,7 +2,7 @@
 layout: post
 title:  "Pasta is the way"
 date:   2014-12-31 08:13:34
-categories: cooking pasta
+categories: blog
 tags: css php symfony
 ---
 

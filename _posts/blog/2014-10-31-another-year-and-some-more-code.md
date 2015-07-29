@@ -2,7 +2,7 @@
 layout: post
 title:  "Another year and some more code"
 date:   2014-10-31 08:13:34
-categories: jekyll update
+categories: blog
 tags: php symfony
 ---
 
