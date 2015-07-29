@@ -2,7 +2,7 @@
     <ul>
       {% for link in site.links %}
 
-        <li><a href="{{link.url}}">{{link.title}}</a></li>
+        <li><a href="{{link.url | prepend: site.baseurl}}">{{link.title}}</a></li>
 
       {% endfor %}
     </ul>
@@ -10,6 +10,6 @@
 
 <header class="site-header">
 
-<center><h1 class="site-title"><a href="/">Haven't coded in Years</a></h1></center>
+<center><h1 class="site-title"><a href="/_site/">Haven't Coded In Years</a></h1></center>
 
 </header>

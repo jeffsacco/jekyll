@@ -13,7 +13,7 @@ layout: default
       <h1>latest articles</h1>
 
         <ul class="post-list">
-        {% for post in site.posts reversed | limit: 4 %}
+        {% for post in site.categories['blog'] reversed | limit: 4 %}
           
           <li class="post">
           <ul class="icon-tags">
@@ -21,9 +21,9 @@ layout: default
               <li><img src="/images/icon-{{tag}}.png" alt="{{tag}}"></li>
             {% endfor %}
           </ul>
-            <h2><a href="{{post.url}}">{{post.title}}</a></h2>
+            <h2><a href="{{post.url | prepend: site.baseurl }}">{{post.title}}</a></h2>
             <p>{{post.content | strip_html | strip_newlines | truncate:200 }}</p>
-            <p class="post-read-more-link"><a href="{{post.url}}">Read more</a></p>
+            <p class="post-read-more-link"><a href="{{post.url | prepend: site.baseurl}}">Read more</a></p>
 
           </li>
         {% endfor %}

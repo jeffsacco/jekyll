@@ -50,7 +50,22 @@
     list-style: none;
 }
 
+.site-nav ul li
+{
+    padding-right: 15px;
+}
 
+.site-header
+{
+    background-image: url('/images/header-bg.png');
+    min-height: 200px;
+}
+
+.site-title
+{
+    padding-top: 50px;
+    text-shadow: 1px 1px 5px #ddd;
+}
 
 
 
