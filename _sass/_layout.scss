@@ -67,6 +67,11 @@
     text-shadow: 1px 1px 5px #ddd;
 }
 
+.site-footer .wrapper
+{
+    max-width: calc(100% - 300px * 2) !important;
+}
+
 
 
 
