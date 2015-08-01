@@ -4,6 +4,7 @@ title:  "Drupal 6 content type theme preprocess"
 date:   2015-07-28 09:13:34
 categories: blog
 tags: php drupal
+published: true
 ---
 
 For anyone who is still working on a Drupal 6 site, this little piece of code will help you on the themeing side.
