@@ -11,6 +11,7 @@ For anyone who is still working on a Drupal 6 site, this little piece of code wi
 
 If you want to directly target a content type so you can spin off a page template, this will do it for you.
 
+{% highlight php linenos %}
 
 	function theme_preprocess_page(&$variables) 
 	{ 
@@ -19,7 +20,7 @@ If you want to directly target a content type so you can spin off a page templat
 			$variables['template_files'][] = "page-node-" . $variables['node']->type;
 		}
 	}
-
+{% endhighlight %}
 
 Change out `theme` on the function name to your own theme name.  Clear the cache and run cron to see the effect.
 
