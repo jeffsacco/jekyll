@@ -3,7 +3,7 @@ layout: post
 title:  "Edit hosts file on mac os"
 date:   2015-08-21 13:39:34
 categories: blog
-tags: macos
+tags: mac
 published: true
 ---
 
