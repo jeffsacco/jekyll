@@ -1,0 +1,94 @@
+.site-nav {
+    text-align: center;
+
+    ul {
+        margin: 1em 0;
+        list-style: none;
+    } 
+
+    li {
+        display: inline-block;
+        margin: 0 0.5px;
+        font-size: 1.5em;
+    }   
+}
+
+.site-title a
+{
+    color: #000;
+    font-size: 56px;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.site-footer
+{
+    padding-top:30px;
+    background-color: #333 !important;
+    color: #fff;
+}
+
+// sections section
+
+.site-section
+{
+    @extend %clearfix;
+    padding-top: 10px;
+}
+
+.icon-tags
+{
+    @extend %clearfix;
+    margin: 0 auto;
+}
+
+.icon-tags li
+{
+    float: left;
+    list-style: none;
+}
+
+.site-nav ul li
+{
+    padding-right: 15px;
+}
+
+.site-header
+{
+    background-image: url('/images/header-bg.png');
+    min-height: 200px;
+}
+
+.site-title
+{
+    padding-top: 50px;
+    text-shadow: 1px 1px 5px #ddd;
+}
+
+.site-footer .wrapper
+{
+    max-width: calc(100% - 300px * 2) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
