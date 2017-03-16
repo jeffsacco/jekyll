@@ -13,27 +13,26 @@ I showed them the default error message but they were not happy with this.  So m
 
 I first started with a usual google search on overriding drupal error messages.  Nothing good came up.  So I hunted down where this actual message was being spit out.  Turned out it was using the Exception class.  Perfect!  I can just extend this and override it
 
-    class SearchApiException extends Exception {
-
-    public function __construct($message = NULL) 
+    class SearchApiException extends Exception 
     {
-        if (!$message) 
+        public function __construct($message = NULL) 
         {
-        $message = t('An error occurred in the Search API framework.');
+            if (!$message) 
+            {
+            $message = t('An error occurred in the Search API framework.');
+            }
+        
+            if('"0" Status: Request failed: No connection could be made because the target machine actively refused it.')
+            {   
+                parent::__construct('This is where my custom message would be.');
+            }
+            else
+            {
+                parent::__construct($message);
+            }
+        
         }
-    
-        if('"0" Status: Request failed: No connection could be made because the target machine actively refused it.')
-        {   
-            parent::__construct('This is where my custom message would be.');
-        }
-        else
-        {
-            parent::__construct($message);
-        }
-    
     }
-
-}
 
 
 
