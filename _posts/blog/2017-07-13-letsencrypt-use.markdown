@@ -37,7 +37,20 @@ Once uploaded I moved onto step two which is the Certificate Signing Requests.  
 
 	https://www.comodo.com/
 
-You are able to get a free certificate for 3 month intervals which is exactly what we need.  
+You are able to get a free certificate in three month intervals which is exactly what we need.  I created an account there, placed in my Certificate Signing Request code and was able to generate my certificate.  I downloaded it and then uploaded it on bluehost to the certificate section.
+
+The final step is contacting bluehost to ask them to move your third party certificate onto their server.  They should ask you what domain and confirm it is a third party certificate.  Sometimes they act 'confused' but say you followed their help tutorial here:
+
+	https://my.bluehost.com/cgi/help/204
+
+Thats it.  Refresh your website in https mode and it will pick up.  Usually you will need to edit your .htaccess file if you are running Apache 
+
+	RewriteEngine On 
+	RewriteCond %{HTTP_HOST} ^example\.com [NC]
+	RewriteCond %{SERVER_PORT} 80 
+	RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
+
+That should give you more than enough explaination to get your free SSL cert.  Enjoy.
 
 
 
