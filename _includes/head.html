@@ -15,7 +15,7 @@
 
   <meta property="og:url"                content="https://www.haventcodedinyears.com" />
   <meta property="og:type"               content="article" />
-  <meta property="og:title"              content="Haven't coded in years'" />
+  <meta property="og:title"              content="{% if page.title %}{{ page.title | prepend: "Haven't coded in years | " }}{% endif %}" />
   <meta property="og:description"        content="Jeff Sacco so called blog of coding." />
   <meta property="og:image"              content="https://www.renttherink.com/images/logo.png" />
 </head>
