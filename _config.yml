@@ -21,5 +21,5 @@ links:
 
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-sitemap
+#gems:
+#  - jekyll-sitemap
