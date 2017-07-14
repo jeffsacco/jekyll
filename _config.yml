@@ -21,5 +21,6 @@ links:
 
 # Build settings
 markdown: kramdown
-#gems:
+gems:
+   - jekyll-timeago
 #  - jekyll-sitemap

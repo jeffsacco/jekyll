@@ -19,6 +19,7 @@ permalink: /blog/
             {% endfor %}
           </ul>
             <h2><a href="{{post.url | prepend: site.baseurl }}">{{post.title}}</a></h2>
+            <p>Posted {{ post.date | timeago }}</p>
             <p>{{post.content | strip_html | strip_newlines | truncate:200 }}</p>
             <p class="post-read-more-link"><a href="{{post.url | prepend: site.baseurl}}">Read more</a></p>
 
